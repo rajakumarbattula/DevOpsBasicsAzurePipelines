@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 - task: Docker@2
   inputs:
-    containerRegistry: 'aishwaryaraj0940/azurepipeline'
-    repository: 'AzureDockerfile'
+    containerRegistry: 'mydockerhub'
+    repository: 'aishwaryaraj0940 / azurepipeline'
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
